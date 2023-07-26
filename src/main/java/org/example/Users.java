@@ -1,9 +1,12 @@
 package org.example;// EmployeeServlet.java
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.sql.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+
 
 public class Users extends HttpServlet {
     private static final String JDBC_URL = "jdbc:postgresql://192.168.0.126:5432/postgres";
