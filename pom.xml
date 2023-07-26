@@ -29,4 +29,15 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <!-- ... other plugins ... -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version> <!-- Use the latest version available -->
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
