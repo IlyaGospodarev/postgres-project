@@ -4,30 +4,17 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <display-name>Servlets Tutorial</display-name>
+    <display-name>Users Project</display-name>
 
+    <!-- Servlet Mapping -->
     <servlet>
-        <servlet-name>SimpleServlet</servlet-name>
-        <servlet-class>net.proselyte.servletstutorial.SimpleServlet</servlet-class>
+        <servlet-name>Users</servlet-name>
+        <servlet-class>org.example.Users</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>SimpleServlet</servlet-name>
-        <url-pattern>/SimpleServlet</url-pattern>
+        <servlet-name>Users</servlet-name>
+        <url-pattern>/users</url-pattern>
     </servlet-mapping>
-
-
-<!--    <display-name>Users Project</display-name>-->
-
-<!--    &lt;!&ndash; Servlet Mapping &ndash;&gt;-->
-<!--    <servlet>-->
-<!--        <servlet-name>Users</servlet-name>-->
-<!--        <servlet-class>org.example.Users</servlet-class>-->
-<!--    </servlet>-->
-
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>Users</servlet-name>-->
-<!--        <url-pattern>/users</url-pattern>-->
-<!--    </servlet-mapping>-->
 
 </web-app>
