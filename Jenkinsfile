@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Setup SSH') {
             steps {
-                sshagent(credentials: [983e013d-c597-4ad2-a37b-06ba50117b81]) {
+                sshagent(credentials: ['983e013d-c597-4ad2-a37b-06ba50117b81']) {
                     sh 'scp target/your-web-app.war root@192.168.0.64:/opt/tomcat/webapps'
                 }
             }
