@@ -5,7 +5,7 @@ import java.sql.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
-public class EmployeeServlet extends HttpServlet {
+public class Users extends HttpServlet {
     private static final String JDBC_URL = "jdbc:postgresql://192.168.0.126:5432/postgres";
     private static final String DB_USER = "postgres";
     private static final String DB_PASS = "postgres";
