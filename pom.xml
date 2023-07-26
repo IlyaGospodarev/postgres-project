@@ -15,11 +15,11 @@
     </properties>
 
     <dependencies>
-        <!-- PostgreSQL JDBC driver -->
+
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version> <!-- Replace with the actual version you downloaded -->
+            <version>42.6.0</version>
         </dependency>
 
         <dependency>
@@ -27,6 +27,18 @@
             <artifactId>jakarta.jakartaee-web-api</artifactId>
             <version>9.1.0</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+            <version>3.0.1</version>
         </dependency>
 
     </dependencies>
