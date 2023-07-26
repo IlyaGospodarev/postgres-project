@@ -2,18 +2,19 @@ package org.example;
 
 public class User {
     private int id;
-    private String firstName;
-    private String lastName;
+    private String name;
     private int age;
+    private String surname;
+
 
     public User() {
     }
 
-    public User(int id, String firstName, String lastName, int age) {
+    public User(int id, String name, int age, String surname) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
         this.age = age;
+        this.surname = surname;
     }
 
     public int getId() {
@@ -24,20 +25,12 @@ public class User {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getAge() {
@@ -48,13 +41,21 @@ public class User {
         this.age = age;
     }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                ", name='" + name + '\'' +
                 ", age=" + age +
+                ", surname='" + surname + '\'' +
                 '}';
     }
 }
